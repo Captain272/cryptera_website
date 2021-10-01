@@ -1,0 +1,5 @@
+<div class="p-2 w-full pt-8 mt-8 border-t border-gray-800 text-center">
+          <a class="text-indigo-500">sdcac@rguktn.ac.in</a>
+          <p class="leading-normal my-5">Uday Kiran Jayanthi->7036368667
+            <br>Bhargav Sahakaru->6305793540
+          </p>

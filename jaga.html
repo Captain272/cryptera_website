@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pop-up.css">
+    <title>test</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            font-family: sans-serif;
+        }
+        
+        body {
+            width: 100%;
+            height: 100%;
+            background: coral;
+            z-index: 1;
+        }
+        
+        .main {
+            width: 100%;
+            height: 100vh;
+            background: crimson;
+            z-index: 1;
+        }
+        
+        .swiper-container {
+            height: 500px;
+            width: 90%;
+            background: cornflowerblue;
+            z-index: 1;
+        }
+        
+        .swiper-wrapper {
+            align-items: center;
+        }
+        
+        .swiper-slide {
+            width: 300px;
+            height: 400px;
+            border-radius: 10px;
+            background: #fff;
+        }
+        
+        .swiper-slide img {
+            width: 100%;
+            height: 50%;
+        }
+        
+        .swiper-slide-active {
+            transform: scale(1.1);
+            transition: .4s;
+        }
+        
+        .content {
+            padding: 30px;
+            background: cyan;
+        }
+        
+        .content h2 {
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: darkblue;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        
+        .content p {
+            color: darkorange;
+            font-size: 20px;
+        }
+        
+        @media (max-width:512px) {
+            .swiper-slide {
+                width: 200px;
+                height: 300px;
+            }
+            .swiper-slide img {
+                width: 100%;
+                height: 40%;
+                object-fit: cover;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="main">
+        <div class="content" id="content">
+
+            <h2>workshops</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, nesciunt eos corrupti nostrum quo nam incidunt facere ut officiis quidem laudantium quam veritatis tenetur et dignissimos consectetur corporis reprehenderit facilis!</p>
+        </div>
+
+        <!-- Swiper -->
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="C:\Users\jAGaDeEsH\Desktop\Tz\Tz\website\img\ws\ai.jpg" alt="">
+                    <input class="btn" type="button" onclick="location.href='#popup1';" value="Click Bey" />
+                </div>
+
+
+                <div class="swiper-slide">
+                    <img src="C:\Users\jAGaDeEsH\Desktop\Tz\Tz\website\img\ws\drone.jpg" alt="">
+                    <input class="btn" type="button" onclick="location.href='#popup1';" value="Click Bey" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="C:\Users\jAGaDeEsH\Desktop\Tz\Tz\website\img\ws\python.jpg" alt="">
+                    <input class="btn" type="button" onclick="location.href='#popup1';" value="Click Bey" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="C:\Users\jAGaDeEsH\Desktop\Tz\Tz\website\img\ws\road.jpg" alt="">
+                    <input class="btn" type="button" onclick="location.href='#popup1';" value="Click Bey" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="C:\Users\jAGaDeEsH\Desktop\Tz\Tz\website\img\ws\iot.jpg" alt="">
+                    <input class="btn" type="button" onclick="location.href='#popup1';" value="Click Bey" />
+                </div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination">hi dude</div>
+        </div>
+    </div>
+    </div>
+
+
+
+
+
+    <div id="popup1" class="overlay">
+        <div class="popup">
+            <div>
+
+
+
+
+
+                <section class="text-gray-700 body-font">
+                    <div class="container px-5 py-24 mx-auto">
+                        <a class="close" href="#content">&times;</a>
+                        <div class="xl:w-1/2 lg:w-3/4 w-full mx-auto text-center">
+                            <a class="close" href="#content">&times;</a>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="inline-block w-8 h-8 text-gray-400 mb-8" viewBox="0 0 975.036 975.036">
+            <path d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"></path>
+          </svg>
+                            <h2>
+                                <p class="leading-relaxed text-lg">
+
+                                    <h1 style="font-family:castellar" class="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">LOGONEER</h1>
+                                    <font color="orange">Warm Wishes to all On the eve of Engineer's Day, SDCAC RGUKTN is going to conduct a series of Virtual events - CRYPTERA 2020. SDCAC proudly announcing the first event of CRYPTERA 2020 - LOGONEER, a logo designing event.
+                                        THEME: ENGINEERING(Must represents all branches). Best logo will be the official logo of CRYPTERA 2020.</font>
+
+                                    <h1 style="font-family:algerian" class="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">Certification :</h1>
+                                    <font color="orange">Top 3 performers will be given Certificate of Appreciation. E-Certificates will be provided to all the participants. So, it's time for you to show your designing skills. *Add any details here.. *</font>
+
+
+                                    <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">Thank-You</h1>
+                                </p>
+                            </h2>
+                            <span class="inline-block h-1 w-10 rounded bg-indigo-500 mt-8 mb-6"></span>
+                            <h1 style="font-size:20px;" class="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">TEAM SDCAC</h1>
+                            <font color="yellow">
+                                <p class="text-black-500">For more info contact : sdcacofffice@rguktn.ac.in
+                                </p>
+                            </font>
+                        </div>
+                    </div>
+                </section>
+
+
+
+
+
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+        <script>
+            var swiper = new Swiper('.swiper-container', {
+                slidesPerView: 'auto',
+                spaceBetween: 30,
+                centeredSlides: true,
+                loop: true,
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+                breakpoints: {
+                    640: {
+                        slidesPerView: 3,
+                        spaceBetween: 30,
+                        centeredSlides: true,
+                        loop: true,
+                    },
+                    1024: {
+                        slidesPerView: 4,
+                        spaceBetween: 30,
+                        centeredSlides: true,
+                        loop: true,
+                    },
+                }
+            });
+        </script>
+</body>
+
+</html>

@@ -1,0 +1,73 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="../package/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <section class="talks">
+        <h2>LISTEN TO TALKS</h2>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="img/1.jpg" ">
+                </div>
+                <div class="swiper-slide "><img src="img/2.jpg " ">
+                    <div class="info"></div>
+                </div>
+                <div class="swiper-slide "><img src="img/3.jpg" "></div>
+                <div class="swiper-slide "><img src="img/4.jpg " "></div>
+                <div class="swiper-slide "><img src="img/5.jpg" "></div>
+                <div class="swiper-slide "><img src="img/6.png " "></div>
+
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination "></div>
+            <!-- Add Arrows -->
+            <!-- <div class="swiper-button-next "></div>
+            <div class="swiper-button-prev "></div> -->
+        </div>
+    </section>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js "></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            //slidesPerView: 'auto',
+            slidesPerView: 1,
+            spaceBetween: 40,
+            centeredSlides: true,
+            //grabCursor: true,
+            loop: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            breakpoints: {
+                640: {
+                    //slidesPerView: 'auto',
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                768: {
+                    //slidesPerView: 'auto',
+                    slidesPerView: 4,
+                    spaceBetween: 40,
+                },
+                1024: {
+                    //slidesPerView: 'auto',
+                    slidesPerView: 5,
+                    spaceBetween: 50,
+                },
+
+            }
+        });
+    </script>
+
+</body>
+
+</html>
